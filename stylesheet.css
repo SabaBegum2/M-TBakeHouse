@@ -1,0 +1,711 @@
+/******************************* wrapper ***********************************/
+body {
+    margin: 0; /* Removes default margin from the body */
+    padding: 0; /* Removes default padding from the body */
+    background: url("Images/cakebackground.jpeg") repeat; /* Sets a repeating background image */
+    font-family: Arial, sans-serif; /* Sets a clean, readable font */
+}
+
+/* Centered wrapper */
+.wrapper {
+    width: 90%; /* Takes up 90% of the viewport width */
+    max-width: 1200px; /* Limits the maximum width */
+    margin: 0 auto; /* Horizontally centers the wrapper */
+    padding: 20px; /* Adds spacing inside the wrapper */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow around the box */
+    border-radius: 8px; /* Slightly rounded corners for a soft look */
+    background: rgba(121, 117, 117, 0.7); /* Semi-transparent background color */
+}
+
+
+/**************************** ABOUT ME PAGE *********************************/
+.about-mt-bakery {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font style */
+    color: #382323; /* text color */
+    padding: 2rem 1rem; /* spacing inside the box */
+    max-width: 800px; /* max width */
+    margin: auto; /* center the section */
+    background-color: transparent; /* no background */
+    font-size: 1.2rem; /* base font size */
+    line-height: 1.8; /* spacing between lines */
+}
+
+.about-mt-bakery h2 {
+    color: #572626; /* heading color */
+    font-size: 2.5rem; /* heading size */
+    margin-bottom: 0.75rem; /* space below heading */
+}
+
+.about-mt-bakery h3 {
+    color: #552727; /* subheading color */
+    font-size: 1.75rem; /* subheading size */
+    margin-top: 2rem; /* space above subheading */
+}
+
+.about-mt-bakery a {
+    color: #792727; /* link color */
+    text-decoration: none; /* no underline */
+    font-size: 1.2rem; /* link size */
+}
+
+.about-mt-bakery a:hover {
+    text-decoration: underline; /* underline on hover */
+}
+
+.heart-gif {
+    width: 60px; /* gif width */
+    height: auto; /* keep aspect ratio */
+    vertical-align: middle; /* align with text */
+    margin-right: 8px; /* space next to text */
+}
+
+  
+
+/*************************** INTRO SECTION *********************************/
+#intro {
+    text-align: center; /* center the text */
+    padding: 40px; /* space inside the box */
+    margin-top: 1rem; /* space from the top */
+    background-color: rgba(226, 218, 218, 0.2); /* light transparent background */
+    border-radius: 11px; /* rounded corners */
+    box-shadow: 0 4px 10px rgba(56, 40, 40, 0.1); /* soft shadow */
+}
+
+#intro h1 {
+    font-size: 3.5rem; /* large title */
+    color: #3e3e3e; /* dark text */
+    font-family: 'Georgia', serif; /* elegant font */
+    margin-bottom: 10px; /* space below title */
+}
+
+#intro h2 {
+    font-size: 1.8rem; /* subtitle size */
+    color: #6a6a6a; /* lighter text */
+    font-family: 'Arial', sans-serif; /* simple font */
+    font-weight: 400; /* normal weight */
+    line-height: 1.6; /* line spacing */
+}
+
+
+/********************************* Navigation bar *********************************/
+nav {
+
+    padding: 10px 0;
+    /* Padding for spacing */
+    text-align: center;
+    /* Center-align the menu */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Display links in a row */
+    justify-content: center;
+    /* Center the links */
+}
+
+nav ul li {
+    margin: 0 15px;
+    /* Add space between the items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #fff;
+    /* Set text color to white */
+    font-size: 1.2rem;
+    /* Set font size for the menu items */
+    font-weight: bold;
+    /* Make the font bold */
+    padding: 10px 15px;
+    /* Add padding inside the button */
+    border-radius: 5px;
+    /* Add rounded corners to the buttons */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+/* Style the links when hovered */
+nav ul li a:hover {
+    background-color: #592222;
+    /* Change background on hover */
+    color: #333;
+    /* Change text color on hover */
+}
+
+/* Optional: Active link styling (when a link is clicked or visited) */
+nav ul li a:active {
+    background-color: #6e3838;
+    /* Darker color when the link is clicked */
+}
+
+/* Optional: Style when the link is visited */
+nav ul li a:visited {
+    color: #ddd;
+    /* Light color for visited links */
+}
+
+
+/* Flexible Header */
+header {
+    display: flex; /* use flexbox layout */
+    align-items: center; /* center items vertically */
+    justify-content: space-between; /* space between logo and nav */
+    padding: 1.1rem; /* space inside the header */
+    background-color: #8f8787; /* header background color */
+    color: black; /* text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    flex-wrap: wrap; /* allow items to wrap on small screens */
+}
+
+header img {
+    width: 5vw; /* image size based on viewport width */
+    height: auto; /* keep image aspect ratio */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* image shadow */
+}
+
+
+header h1 {
+    font-size: 2rem;
+    /* Responsive font size */
+    margin: 0 0 0 1rem;
+}
+
+/* Flexible Image */
+body h1 img {
+    width: 80%;
+    /* Start with 80% width for larger screens */
+    max-width: 800px;
+    /* Max width for larger images */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+
+    nav a {
+        margin-right: 1rem;
+    }
+
+    header {
+        padding: 1rem;
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        text-align: center;
+    }
+
+    header img {
+        width: 25vw;
+        /* Smaller logo on smaller screens */
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/* Default Image Size (Fixed height and width) */
+body h1 img {
+    width: 1430px;
+    /* Fixed width of 1430px */
+    height: 600px;
+    /* Fixed height of 600px */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
+}
+
+/* For screens smaller than 768px (tablet/phone) */
+@media (max-width: 768px) {
+    body h1 img {
+        width: 100%;
+        /* Make the image take up 100% of the container width */
+        height: auto;
+        /* Adjust height proportionally */
+        max-width: 100%;
+        /* Prevent the image from exceeding the container width */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+/* For screens smaller than 1024px (medium screens) */
+@media (max-width: 1024px) {
+    body h1 img {
+        width: 90%;
+        /* Use 90% of the container width */
+        height: auto;
+        /* Adjust height automatically to maintain aspect ratio */
+        max-width: 1430px;
+        /* Prevent the image from exceeding 1430px width */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+        /* Stack links vertically */
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        /* Smaller font for smaller screens */
+    }
+
+    header img {
+        width: 35vw;
+        /* Adjust logo size further */
+    }
+
+    body h1 img {
+        width: 100%;
+        /* Keep the width responsive */
+        height: 1000px;
+        /* Set a fixed height to make it longer */
+        max-width: 100%;
+        /* Prevent stretching beyond the container width */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/************************************ Banner styling *************************************/
+#Bannerimage {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* taller image */
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* transparent black overlay */
+    z-index: 1;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(108, 55, 55, 0.5);
+    font-family: 'Academy Engraved LET', serif;
+    /* Custom font */
+}
+
+.engraved-text {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    /* to emphasize the engraved look */
+}
+
+
+
+/******************************* feature/most popular page styling *********************************/
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 40px;
+    padding: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.image-card {
+    background: rgba(163, 150, 150, 0.2);
+    /* white with 80% opacity */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+    transform: scale(1.03);
+    /* subtle hover effect */
+}
+
+.image-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+.caption {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    color: #f9f0f0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    gap: 16px;
+}
+
+.image-card img {
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-card p {
+    text-align: center;
+}
+
+/***************************** MOST POPULAR ****************************************/
+
+#MostPopular h1 {
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(63, 57, 57);
+    font-family: 'Georgia', serif;
+    font-size: 3.5em;
+}
+
+#MostPopular {
+    background-color: rgba(226, 218, 218, 0.2);
+    /* 0.7 = 70% opacity */
+}
+
+/************************* FEATURES **************************/
+#Features h1 {
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(63, 57, 57);
+    font-family: 'Georgia', serif;
+    font-size: 3.5em;
+}
+
+#Features {
+    background-color: rgba(226, 218, 218, 0.2);
+    /* 0.7 = 70% opacity */
+}
+
+/********************************** CAKE RECIPES **********************************/
+#Cake_Recipes h1 {
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(63, 57, 57);
+    font-family: 'Georgia', serif;
+    font-size: 3.5em;
+}
+
+#Cake_Recipes {
+    background-color: rgba(226, 218, 218, 0.2);
+    /* 0.7 = 70% opacity */
+}
+
+/********************************** CAKE RECIPES LEARN MORE **********************************/
+.learn-more {
+    display: inline-block; /* makes the link behave like a button */
+    margin-top: 0.5rem; /* space above the button */
+    padding: 0.4rem 0.8rem; /* space inside the button */
+    background-color: #522727; /* button background color */
+    color: #fff; /* text color */
+    text-decoration: none; /* remove underline */
+    border-radius: 6px; /* rounded corners */
+    font-size: 0.9rem; /* text size */
+    transition: background-color 0.3s ease; /* smooth color change on hover */
+}
+
+.learn-more:hover {
+    background-color: #7a3e3e; /* darker color on hover */
+}
+
+
+
+/**************************************** RECIPE VIDEOS ****************************************/
+.RecipeVideos {
+    text-align: center; /* Center align the content */
+    padding: 2rem; /* Add space inside the container */
+    background-color: rgba(226, 218, 218, 0.2); /* Transparent background */
+    margin-top: 1rem; /* Add space above the section */
+    color: rgb(63, 57, 57); /* Text color */
+    font-family: 'Georgia', serif; /* Font style */
+    font-size: 1.5em; /* Increase font size for readability */
+}
+
+.video-single {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center align the video */
+    margin: 2rem 0; /* Space above and below the video */
+}
+
+.learn-more,
+.more-videos {
+    display: inline-block; /* Make buttons inline */
+    margin-top: 1.5rem; /* Space above the buttons */
+    padding: 0.5rem 1rem; /* Padding inside the buttons */
+    background-color: #522727; /* Button background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-size: 0.9rem; /* Font size */
+}
+
+.more-videos {
+    background-color: #7a3a3a; /* Different background for "More Videos" button */
+    margin-left: 1rem; /* Space between buttons */
+}
+
+.learn-more:hover,
+.more-videos:hover {
+    background-color: #3b1c1c; /* Darker background color on hover */
+}
+
+
+/********************************** Customize order **********************************/
+.customize_order {
+    font-family: 'Georgia', serif; /* fallback serif font */
+    background-color: rgba(226, 218, 218, 0.2); /* light background with transparency */
+    /* 0.7 = 70% opacity - adjust as needed */
+    padding: 2rem; /* space inside the box */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font style for text */
+    color: #4b2e2e; /* text color */
+    border-radius: 12px; /* rounded corners */
+    max-width: 800px; /* limits width of section */
+    margin: 0 auto; /* center the section horizontally */
+}
+
+.customize_order h2 {
+    font-size: 2rem; /* heading size */
+    color: #452f2f; /* heading color */
+    margin-bottom: 1.5rem; /* space below heading */
+    text-align: center; /* center the heading */
+}
+
+.customize_order h3 {
+    font-size: 1.5rem; /* subheading size */
+    color: #703a3a; /* subheading color */
+    margin-top: 1.5rem; /* space above subheading */
+}
+
+.customize_order p {
+    font-size: 1rem; /* paragraph font size */
+    line-height: 1.6; /* spacing between lines */
+    margin-top: 0.5rem; /* space above paragraph */
+}
+
+
+
+/************************************** Customize order button **********************************/
+.customize_order-btn-wrapper {
+    text-align: center; /* center the button horizontally */
+    margin-top: 2rem; /* space above the button */
+}
+
+.customize_order-btn {
+    background-color: #9d7d7d; /* button background color */
+    color: white; /* button text color */
+    padding: 0.75rem 1.5rem; /* space inside the button */
+    font-size: 1rem; /* text size */
+    border: none; /* no border */
+    border-radius: 8px; /* rounded corners */
+    cursor: pointer; /* cursor changes on hover */
+    transition: background-color 0.3s ease; /* smooth color change on hover */
+}
+
+.customize_order-btn:hover {
+    background-color: #a0522d; /* new background color when hovering */
+}
+
+
+/*********************************** Contact me *****************/
+#ContactMeSection {
+    padding: 30px; /* space inside the section */
+    max-width: 700px; /* limit the width */
+    margin: 0 auto; /* center horizontally */
+    margin-top: 1rem; /* space above the section */
+    color: rgb(96, 63, 63); /* text color */
+    background-color: rgba(230, 227, 227, 0.6); /* light transparent background */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 0 10px rgba(237, 233, 233, 0.1); /* soft shadow */
+    font-family: 'Georgia', serif; /* elegant font */
+}
+
+h2 {
+    text-align: center; /* center the heading */
+    color: #444; /* dark gray color */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* stack form elements vertically */
+}
+
+label {
+    font-weight: bold; /* bold text for labels */
+    margin-bottom: 5px; /* space below label */
+}
+
+input,
+textarea {
+    width: 100%; /* full width fields */
+    padding: 10px; /* space inside the fields */
+    margin-bottom: 10px; /* space below each field */
+    border-radius: 5px; /* rounded corners */
+    border: 1px solid #ccc; /* light gray border */
+}
+
+button {
+    width: 100%; /* full width button */
+    background-color: #9d7d7d; /* button color */
+    color: white; /* text color */
+    padding: 12px 20px; /* space inside button */
+    border: none; /* remove border */
+    border-radius: 5px; /* rounded button */
+    font-size: 16px; /* button text size */
+    cursor: pointer; /* cursor changes on hover */
+}
+
+button:hover {
+    background-color: #4f2121; /* darker on hover */
+}
+
+
+
+/******************************************** footer ******************************************/
+/* Footer container styling */
+#footer {
+    background-color: #f8f2ed;
+    /* Light background color */
+    color: #5a3e36;
+    /* Dark brown text color for contrast */
+    text-align: center;
+    /* Center the text */
+    padding: 20px 10px;
+    /* Space inside the footer */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Clean, readable font */
+    font-size: 14px;
+    /* Standard text size */
+    border-top: 2px solid #d3bfa6;
+    /* Subtle top border for separation */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    /* Soft shadow above the footer */
+}
+
+/* Link styling inside footer */
+#footer a {
+    color: #b86b45;
+    /* Warm brown for links */
+    text-decoration: none;
+    /* Remove underline by default */
+    font-weight: 500;
+    /* Slightly bold text */
+}
+
+/* Link hover effect */
+#footer a:hover {
+    text-decoration: underline;
+    /* Underline on hover for clarity */
+    color: #8c4c30;
+    /* Darker shade on hover */
+}
+
+/* Paragraph spacing in footer */
+#footer p {
+    margin: 10px 0;
+    /* Add space between paragraphs */
+}
+
+/******************************** CAKE PRICING **********************************/
+.cake-pricing {
+    margin: 20px auto; /* center and add space around */
+    max-width: 800px; /* set max width */
+    padding: 20px; /* space inside the box */
+    background-color: rgba(226, 218, 218, 0.2); /* light transparent background */
+    border-radius: 8px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+.cake-pricing h2 {
+    text-align: center; /* center the heading */
+    color: #522727; /* dark red color */
+    font-size: 2rem; /* heading size */
+    margin-bottom: 1rem; /* space below heading */
+}
+
+table {
+    width: 100%; /* full width table */
+    border-collapse: collapse; /* remove space between borders */
+    margin-top: 20px; /* space above table */
+}
+
+table th, table td {
+    padding: 12px; /* space inside cells */
+    text-align: center; /* center text */
+    border: 1px solid #eeeeee; /* light gray border */
+}
+
+table th {
+    background-color: #522727; /* header background */
+    color: #f0efef; /* header text color */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #8f7676; /* alternate row background */
+}
+
+table tbody tr:hover {
+    background-color: #502929; /* highlight row on hover */
+}
+
+table td {
+    font-size: 1rem; /* text size in table */
+}
